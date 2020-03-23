@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  img {
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 64px;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+  }
+  
+  .container {
+    max-width: 875px;
+    padding: 0px 15px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  
+  .header:before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    z-index: 2;
+  }
+  
+  .header-menu-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+  }
+  
+  .header-logo {
+    position: relative;
+    z-index: 3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .header-logo a {
+      color: #fff;
+  }
+  
+  .header-burger {
+    display: none;
+  }
+  
+  .menu-list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu-list li {
+    margin-left: 20px;
+    list-style: none;
+  }
+  
+  .menu-list a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .menu-list a:hover {
+      color: rgba(255, 255, 255, 0.863);
+  }
+
+  .birmingham-photo {
+      height: 765px;
+      background-image: url(images/birmingham-studio-1-1600x1000.jpg);
+      background-size: cover;
+      position: relative;
+  }
+
+  .birmingham-photo:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(46, 42, 42, 0.336);
+  } 
+
+  .section-get-in-touch {
+      position: absolute;
+      left: 80px;
+      bottom: 80px;
+  }
+
+  .section-get-in-touch p {
+      color: rgba(255, 255, 255, 0.767);
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  .phone-email {
+      margin-top: 50px;
+  }
+
+  .phone-title, .email-title, .client-helpdesk-title, .city-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.753);
+    margin-bottom: 10px;
+    padding-top: 20px;
+  } 
+
+  .phone-description, .email-description, .client-helpdesk-description, .city-adress-title, .city-adress-discription {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.603);
+    margin-bottom: 30px;
+    line-height: 30px;
+  }
+
+  .email-description ul {
+    margin-left: 50px;
+  }
+
+  .email-description ul li {
+      margin: 20px 0px;
+  }
+
+  .email-description a, .client-helpdesk-description a {
+      font-weight: bold;
+      color: rgb(80, 80, 230);
+      position: relative;
+      line-height: 1;
+  }
+
+  .email-description a:after, .client-helpdesk-description a:after {
+    display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: rgb(80, 80, 230);
+	content: "";
+	transition: width 0.3s ease-out;
+}
+  
+.email-description a:hover:after, 
+.client-helpdesk-description a:hover:after,
+.email-description a:focus:after, 
+.client-helpdesk-description a:focus:after  {
+	width: 100%; 
+}
+
+
+.birmingham-adress {
+    margin-top: 75px;
+}
+
+.city-title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.753);
+    margin-bottom: 20px;
+}
+
+.london-adress {
+    margin: 125px 0px;
+}
+
+
+.footer {
+    padding-top: 100px;
+    background-color: rgb(29, 29, 73);
+}
+
+.footer-container {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+.footer-description-text {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer-description-text span {
+    color: rgb(179, 37, 171);
+}
+
+.footer-description-text span:hover {
+    color: red;
+}
+
+.footer-description-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.footer-description-link a {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(101, 210, 238);
+    position: relative;
+    line-height: 1;
+}
+
+.footer-description-link a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(101, 210, 238);
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.footer-description-link a:hover:after, 
+.footer-description-link a:focus:after  {
+  width: 100%; 
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input[type=text] {
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid  rgb(86, 86, 153);
+    outline: none;
+    border-radius: 5px;
+}
+
+form input[type=text]:focus {
+    border: 3px solid green;
+}
+
+form input[type=button] {
+    padding: 10px 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(79, 159, 179);
+    border: 1px solid rgb(73, 152, 172) ;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+form input[type=button]:hover {
+    background-color: rgb(101, 210, 238);
+}
+
+.container-h3-footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.h3-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+.h3-footer img {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-menu-container {
+        height: 50px;
+      }
+      .header-burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+      }
+    
+      .header-burger::before,
+      .header-burger::after {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        transition: all 0.3s ease 0s;
+      }
+    
+      .header-burger span {
+        position: absolute;
+        left: 0px;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+      }
+    
+      .header-burger:before {
+        top: 0px;
+      }
+    
+      .header-burger:after {
+        bottom: 0px;
+      }
+    
+      .header-burger.active:before {
+          transform:rotate(45deg);
+          top: 9px;
+      }
+    
+      .header-burger.active:after {
+        transform:rotate(-45deg);
+        bottom: 9px;
+    }
+    
+    .header-burger.active span {
+        transform:scale(0);
+        
+    }
+
+    body.lock {
+        overflow: hidden;
+    }
+    .content {
+        padding-top: 20px;
+      }
+    
+      .menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #DAA520;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+      }
+    
+      .menu.active {
+          top: 0;
+      }
+    
+      .menu-list {
+          display: block;
+      }
+    
+      .menu-list li {
+          margin:0px 0px 20px 0px;
+      }
+
+    .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .form-container {
+        margin-top: 50px;
+    }
+}
+
